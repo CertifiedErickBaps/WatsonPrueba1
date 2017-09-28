@@ -13,8 +13,8 @@ function SendMessage()
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var newMsg = "<div class=\"cb_vtt\">" +
-				"<div class=\"cb_vtt_title\">@Visitante</div>" +
-				msg + 
+				"<div class=\"cb_vtt_title\">Usuario</div>" +
+				msg +
 			"</div>";
 			chatbot.innerHTML = chatbot.innerHTML + newMsg;
 			var newMsg = this.responseText;
@@ -26,7 +26,7 @@ function SendMessage()
 	};
 	xhttp.open("GET", "/sendMessage?message=" + msg, true);
 	xhttp.send();
-	
+
 }
 
 function RestartChat(userName){
