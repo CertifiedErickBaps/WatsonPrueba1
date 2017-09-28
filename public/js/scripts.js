@@ -8,12 +8,13 @@ function SendMessage()
 	var msg = document.getElementById('watson_input').value;
 	var chatbot = document.getElementById('watson_chatbot');
 	var watsonResponse = "";
+	var name = nombre;
 
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var newMsg = "<div class=\"cb_vtt\">" +
-				"<div class=\"cb_vtt_title\">Usuario</div>" +
+				"<div class=\"cb_vtt_title\">"+ name +"</div>" +
 				msg +
 			"</div>";
 			chatbot.innerHTML = chatbot.innerHTML + newMsg;

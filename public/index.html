@@ -16,9 +16,24 @@
     <link rel="stylesheet" href="stylesheets/css/pricing-table.css">
     <link rel="stylesheet" href="stylesheets/css/app.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script language="javascript" type="text/javascript">
+      var nombre = prompt ("Ingrese su nombre", "")
+    </script>
   </head>
 
   <body onload="InitializeConversation()">
+
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+        <nav data-magellan>
+          <ul class="vertical menu" data-drilldown>
+            <li><a href="#home"><i class="fi-ticket"></i>Home</a></li>
+            <li><a href="#info-container">Info</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="off-canvas-content" data-off-canvas-content>
 
 
@@ -60,10 +75,10 @@
                   <li><a href="#" data-toggle="offCanvas">Menu</a></li>
                 </ul>
                 <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
-                  <li><a href="#tickets-container"><i class="fi-ticket"></i>Home</a></li>
+                  <li><a href="#home"><i class="fi-ticket"></i>Home</a></li>
 
                   <li><a href="#info-container">Info</a></li>
-                  <li><a href="#suscribete-container">Contacto</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
                 </ul>
               </nav>
             </div>
@@ -85,13 +100,13 @@
               <div id="watson_chatbot">
 
               </div>
-              <div class="input-group" id="controlsArea">
 
+              <input type="text" id="watson_input">
+
+              <div class="input-group" id="controlsArea">
                 <div class="input-group-button">
-                  <input type="text" id="watson_input">
                   <input class="button" type="submit" value="Enviar" onclick="SendMessage()">
                   <input class="button" type="submit" value="Reiniciar">
-
                 </div>
               </div>
             </div>
@@ -105,6 +120,7 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/scripts.js"></script>
+
 
   </body>
 
