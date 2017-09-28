@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>El Watson</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-Medic</title>
+    <link rel="stylesheet" href="icons/foundation-icons.css">
+    <link rel="stylesheet" href="stylesheets/css/foundation.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ravi+Prakash" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/css/pricing-table.css">
+    <link rel="stylesheet" href="stylesheets/css/app.css">
+    <link rel="stylesheet" href="stylesheets/css/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+
+  <body onload="InitializeConversation()">
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Watson -->
+        <section id="watson-container" onload="InitializeConversation()" data-magellan-target="watson-container">
+          <div class="row columns small-12 medium-6">
+            <div class="text-center">
+              <img class="" src="https://s-media-cache-ak0.pinimg.com/originals/e6/87/12/e68712974efe9c8d536d92b3632549d6.gif" width="100px">
+              <h1>Dr. Vergas Corazón @Watson</h1>
+            </div>
+            <div class="text-center" id="chatArea">
+              <div id="cb_title">
+                <img src="http://www.residentmar.io/static/post_assets/watsongraph-visualization/robotic_suggestions.jpg"
+                width="50px" style="vertical-align: middle">
+                Chatea con Watson
+              </div>
+
+              <div id="watson_chatbot">
+
+              </div>
+              <div class="input-group" id="controlsArea">
+                
+                <div class="input-group-button">
+                  <input type="text" id="watson_input">
+                  <input type="button" value="Enviar" onclick="SendMessage()">
+                  <input type="button" value="Reiniciar">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- Watson -->
+      </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
