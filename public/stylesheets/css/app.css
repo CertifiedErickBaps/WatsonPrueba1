@@ -1,4 +1,4 @@
-body {
+contactobody {
   background-color: #ee3f54;
 }
 
@@ -33,27 +33,23 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
   background-color: #48a19d;
   color: white;
 }
-#tickets-action .callout {
+#contacto .callout {
   background-color: #5e7eb7;
   color: white;
   margin-bottom: 0;
 }
-#tickets-action .callout .button{
+#contacto .callout .button{
   border: 1px solid white;
   color: white;
 }
 #lineup-container {
    padding: 1em 0;
 }
-#lineup-container,
-#lineup-container .tabs-panel,
-#lineup-container .tabs,
-#lineup-container .tabs .tabs-title,
-#lineup-container .tabs .tabs-title.is-active a {
+#watson-container {
   background-color: #9676af;
-  color: white;
+  /*color: white;
   border: 0;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
   font-family: "Bree Serif", serif;
 }
 .tabs-content {
@@ -78,7 +74,7 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
  #lineup-container .column:nth-child(odd) figcaption {
    text-align: right;
  }
-#tickets-container {
+#-container {
   padding: 1em 0;
   background-color: #f6e15f;
   color: #161742;
@@ -101,7 +97,7 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
   font-family: "Bree Serif", serif;
 }
 #info-container {
-  background-color: #161742;
+  background-color: #9676af;
   color: white;
   padding: 1em 0;
 }
