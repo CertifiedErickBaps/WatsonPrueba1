@@ -139,3 +139,12 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
 #offCanvas .js-drilldown-back > a::before {
   border-color: transparent white transparent transparent;
 }
+--------------------------------------------------------------------------------
+footer {
+  background-color: blue;
+  padding: 80px 0px;
+}
+footer a {
+  display: block;
+  color: black;
+}
